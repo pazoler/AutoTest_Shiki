@@ -21,6 +21,7 @@ public class ConnectionTest {
     private int salary;
 
     public ConnectionTest() {
+        System.out.println("Object ConnectionTest created");
     }
 
     public String getName() {
