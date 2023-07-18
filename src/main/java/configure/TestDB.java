@@ -1,6 +1,6 @@
 package configure;
 
-import hibernate_test.entity.ConnectionTest;
+import Autotest.hibernate.entity.ConnectionTest;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

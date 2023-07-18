@@ -4,23 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec814184-ad7a-452c-81a4-57151e135b0f" name="Changes" comment="First Commit&#10;Configuration Project with Hibernate">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/ConfigurationReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/base/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/ChromeDriverInitiator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/GeckoDriverInitiator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configure/DITestReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configure/XMLTestIOC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContextAnnotations.xml" afterDir="false" />
+    <list default="true" id="ec814184-ad7a-452c-81a4-57151e135b0f" name="Changes" comment="Second Commit&#10;DI And IOC test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/MyConfigWithoutXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/pageObjects/BasePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/pageObjects/LoginPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/LogInSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/utils/GlobalVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/configure/TestWithoutXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/LogIn.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate_test/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configure/TestDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate_test/entity/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/entity/ConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/driver/base/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configure/DITestReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configure/DITestReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configure/TestDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configure/TestDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configure/XMLTestIOC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configure/XMLTestIOC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate_test/entity/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/hibernate/entity/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,40 +54,31 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Games/ForIdea/IdeaProjects/AutoTest_Shiki/src/main/resources",
+    "last_opened_file_path": "C:/Games/ForIdea/IdeaProjects/AutoTest_Shiki/src/test/resources/features",
     "spring.configuration.checksum": "cac67c854d606c477bf198699b76031e"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\test\resources\features" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\main\resources" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\main\java\Autotest\driver\drivers" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\main\java" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\test\java" />
-      <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\test\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Autotest" />
       <recent name="Autotest.driver" />
       <recent name="hibernate_test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Autotest.stepDefinitions" />
+      <recent name="Autotest.utils" />
+      <recent name="Autotest.pageObjects" />
       <recent name="Autotest.driver.base" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DITestReader">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
-      <module name="AutoTest_Shiki" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate Successful Login">
     <configuration name="DITestReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="configure.DITestReader" />
       <module name="AutoTest_Shiki" />
@@ -114,6 +105,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestWithoutXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="configure.TestWithoutXML" />
+      <module name="AutoTest_Shiki" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="configure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="XMLTestIOC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="configure.XMLTestIOC" />
       <module name="AutoTest_Shiki" />
@@ -127,29 +131,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Validate Successful Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LogIn.feature" />
+      <option name="GLUE" value="Autotest.stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutoTest_Shiki" />
+      <option name="NAME_FILTER" value="^Validate Successful Login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
-      <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
+        <item itemvalue="Application.TestWithoutXML" />
         <item itemvalue="Application.DITestReader" />
         <item itemvalue="Application.XMLTestIOC" />
         <item itemvalue="Application.TestDB" />
-        <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +172,7 @@
       <workItem from="1689146524222" duration="1214000" />
       <workItem from="1689240956697" duration="194000" />
       <workItem from="1689327807703" duration="6741000" />
-      <workItem from="1689666963594" duration="12671000" />
+      <workItem from="1689666963594" duration="18202000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit&#10;Configuration Project with Hibernate">
       <created>1689340153639</created>
@@ -173,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689340153639</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Commit&#10;DI And IOC test">
+      <created>1689690168272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689690168272</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +207,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit&#10;Configuration Project with Hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit&#10;Configuration Project with Hibernate" />
+    <MESSAGE value="Second Commit&#10;DI And IOC test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit&#10;DI And IOC test" />
   </component>
 </project>

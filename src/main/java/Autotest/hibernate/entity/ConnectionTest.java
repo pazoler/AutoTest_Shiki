@@ -1,4 +1,6 @@
-package hibernate_test.entity;
+package Autotest.hibernate.entity;
+
+import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,6 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "employees")
+@Component("test")
 public class ConnectionTest {
     @Column(name = "id")
     @Id

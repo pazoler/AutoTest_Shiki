@@ -1,8 +1,6 @@
 package configure;
 
-import Autotest.driver.ConfigurationReader;
 import Autotest.driver.DriverFactory;
-import hibernate_test.entity.ConnectionTest;
 import org.openqa.selenium.WebDriver;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

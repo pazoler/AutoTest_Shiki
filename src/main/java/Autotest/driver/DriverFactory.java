@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
-@Component
+//@Component - XML annotation
 public class DriverFactory {
 
     private static ThreadLocal<WebDriver> webDriver = new ThreadLocal<>();
-    private static ConfigurationReader reader = new ConfigurationReader();
+
     private static String browserType;
 
     public static WebDriver getDriver() {
@@ -41,7 +41,17 @@ public class DriverFactory {
         return driver;
     }
 
-//    private static String getBrowserType() {
+    public static void cleanupDriver() {
+        webDriver.get().quit();
+        webDriver.remove();
+    }
+
+    //@Autowired - XML annotation
+    public DriverFactory(ConfigurationReader reader) {
+        browserType = reader.getBrowserType();
+    }
+
+    //    private static String getBrowserType() {
 //        String browserType = null;
 //
 //        try {
@@ -54,14 +64,4 @@ public class DriverFactory {
 //        }
 //        return browserType;
 //    }
-
-    public static void cleanupDriver() {
-        webDriver.get().quit();
-        webDriver.remove();
-    }
-
-    @Autowired
-    public DriverFactory(ConfigurationReader reader) {
-        browserType = reader.getBrowserType();
-    }
 }
