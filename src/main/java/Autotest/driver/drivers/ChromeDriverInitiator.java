@@ -19,3 +19,11 @@ public class ChromeDriverInitiator  {
         return driver;
     }
 }
+
+//Установка кук вручную для обхода капчи
+//    // Создаем cookie
+//    private static final Cookie COOKIE = new Cookie("имя", "содержимое", "домен", "путь", new Date("дата"));
+//    // Создаем браузер
+//    WebDriver driver = new ChromeDriver(options);
+//// Добавляем cookie в браузер
+//driver.manage().addCookie(COOKIE);

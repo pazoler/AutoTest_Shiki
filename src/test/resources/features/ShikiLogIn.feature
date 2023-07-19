@@ -1,16 +1,18 @@
+#Неактуальный файл т.к не обходится капча
 @login @regression
 
-Feature: WebDriver University - Login Page
+Feature: Shiki - Login Page
 
   Background:
-    Given I access the webdriver university login page
+    Given I access the Shikimori login page
 
 
   Scenario: Validate Successful Login
-    When I enter a username webdriver
-    And I enter a password webdriver123
-    And I click on the login button
-    Then I should be presented with the successful login message
+    When I enter a login AttstPr
+    And I enter a shiki password Pswrd!209
+    And I click on the entry button
+    And I click checkbox button
+    Then I should be presented with the successful entry message
 
   Scenario: Validate Unsuccessful Login
     When I enter a username webdriver
