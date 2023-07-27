@@ -15,15 +15,15 @@ import static Autotest.driver.DriverFactory.cleanupDriver;
 import static Autotest.driver.DriverFactory.getDriver;
 
 //Fixture class
-public class Hooks {
+public class GUIHooks {
     AnnotationConfigApplicationContext context;
-    @Before
+    @Before("GUI")
     public void setup() {
         context = new AnnotationConfigApplicationContext(MyConfigWithoutXML.class);
         getDriver();
     }
 
-    @AfterStep
+    @AfterStep ("GUI")
     public void captureExceptionImage(Scenario scenario) {
         if (scenario.isFailed()) {
             Timestamp timestamp = new Timestamp(System.currentTimeMillis());
@@ -35,7 +35,7 @@ public class Hooks {
         }
     }
 
-    @After
+    @After ("GUI")
     public void tearDown() {
         cleanupDriver();
         context.close();
