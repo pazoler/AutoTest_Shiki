@@ -7,4 +7,6 @@ public class GlobalVariables {
 
     public static final String SHIKI_SITE_API_PATH="/api/";
 
+    public static final String SHIKI_SINGLE_MANGA = "mangas/{mangaId}";
+
 }

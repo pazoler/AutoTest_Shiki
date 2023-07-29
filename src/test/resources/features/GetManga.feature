@@ -2,8 +2,13 @@
 Feature: Shiki - API manga check
 
   Background:
-    Given Check for API work by List of Manga
+    Given Site Shiki is working
 
 
-  Scenario: Checking genres
-    Then Should be presented with manga
+  Scenario: Search for one of the highest score manga
+    When Check for API work by List of Manga
+    Then Should be presented with manga Slam Dunk
+
+  Scenario: Search magna by id
+    When I looking for manga with id 1
+    Then Manga should be named Monster

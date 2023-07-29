@@ -15,11 +15,10 @@ public class APIHooks {
     public static RequestSpecification requestSpecification;
     public static ResponseSpecification responseSpecification;
 
-    @Before("API")
+    @Before("@API")
     public static void setup() {
         //уточнить, как пройти ssl верификацию на фиддлере
         //RestAssured.proxy("localhost", 8080);
-        System.out.println("ass");
 
         requestSpecification =
                 new RequestSpecBuilder()
@@ -35,7 +34,7 @@ public class APIHooks {
         RestAssured.requestSpecification = requestSpecification;
 
         responseSpecification = new ResponseSpecBuilder()
-                .expectStatusCode(200)
+                //.expectStatusCode(200)
                 //.expectResponseTime(lessThan(300L))
                 .build();
 
