@@ -12,6 +12,7 @@ public class ChromeDriverInitiator  {
     static WebDriver driver = null;
 
     public static WebDriver setChromeDriver() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Games\\ForIdea\\IdeaProjects\\AutoTest_Shiki\\src\\main\\java\\Autotest\\driver\\drivers\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         chromeOptions.addArguments("--remote-allow-origins=*","ignore-certificate-errors");

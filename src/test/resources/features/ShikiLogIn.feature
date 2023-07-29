@@ -1,5 +1,5 @@
 #Неактуальный файл т.к не обходится капча
-@login @regression
+@login @regression @ui
 
 Feature: Shiki - Login Page
 

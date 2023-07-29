@@ -17,13 +17,13 @@ import static Autotest.driver.DriverFactory.getDriver;
 //Fixture class
 public class Hooks {
     AnnotationConfigApplicationContext context;
-    @Before
+    @Before("@ui")
     public void setup() {
         context = new AnnotationConfigApplicationContext(MyConfigWithoutXML.class);
         getDriver();
     }
 
-    @AfterStep
+    @AfterStep("@ui")
     public void captureExceptionImage(Scenario scenario) {
         if (scenario.isFailed()) {
             Timestamp timestamp = new Timestamp(System.currentTimeMillis());
@@ -35,7 +35,7 @@ public class Hooks {
         }
     }
 
-    @After
+    @After ("@ui")
     public void tearDown() {
         cleanupDriver();
         context.close();

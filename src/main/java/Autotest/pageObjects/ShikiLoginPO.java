@@ -47,11 +47,11 @@ public class ShikiLoginPO extends BasePageObject {
     }
 
     public void clickCheckBoxButton() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         waitForWebElementAndClick(checkBoxButton);
     }
 }
