@@ -13,7 +13,7 @@ Feature: Shiki - DB check
 
 
   Scenario: Search for one of the highest score manga
-    When I looking for Anime with id 1
+    When I looking for Anime with id 7
     And Transform JSON to Object
     Then Put fields of this object into DB
 

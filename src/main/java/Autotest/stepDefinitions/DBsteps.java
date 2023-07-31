@@ -39,7 +39,7 @@ public class DBsteps {
         } catch (NumberFormatException e) {
             throw new RuntimeException(e);
         }
-    }
+}
 
     @And("Transform JSON to Object")
     public void transformJSONToObject() throws JsonProcessingException {

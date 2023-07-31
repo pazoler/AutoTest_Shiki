@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "animes")
-@Component("test")
+@Component("anime")
 public class AnimesTable {
     @Column(name = "id")
     @Id

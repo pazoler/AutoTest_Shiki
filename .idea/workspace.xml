@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec814184-ad7a-452c-81a4-57151e135b0f" name="Changes" comment="First Working API Tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/POJOclasses/AnimeIdClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/POJOclasses/AnimeImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/hibernate/entity/AnimesTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/DBsteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/DBHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DBtest.feature" afterDir="false" />
+    <list default="true" id="ec814184-ad7a-452c-81a4-57151e135b0f" name="Changes" comment="First Working DB Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/APISteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/APISteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/utils/GlobalVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/utils/GlobalVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GetManga.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GetMangaAPI.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/ChromeDriverInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/ChromeDriverInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/hibernate/entity/AnimesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/hibernate/entity/AnimesTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/DBsteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/DBsteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/DBtest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/DBtest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ShikiLogIn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ShikiLogIn.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,20 @@
       <recent name="Autotest.driver.base" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Search for one of the highest score manga">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate Successful Login (1)">
+    <configuration name="TestWithoutXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="configure.TestWithoutXML" />
+      <module name="AutoTest_Shiki" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="configure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Checking genres" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GetManga.feature" />
@@ -170,33 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Validate Successful Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LogIn.feature" />
-      <option name="GLUE" value="Autotest.stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="AutoTest_Shiki" />
-      <option name="NAME_FILTER" value="^Validate Successful Login$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Login$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Validate Successful Login (1)" />
+        <item itemvalue="Application.TestWithoutXML" />
         <item itemvalue="Cucumber Java.Scenario: Search for one of the highest score manga" />
         <item itemvalue="Cucumber Java.Scenario: Search magna by id" />
         <item itemvalue="Cucumber Java.Scenario: Checking genres" />
-        <item itemvalue="Cucumber Java.Scenario: Validate Successful Login (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +207,7 @@
       <workItem from="1689874876688" duration="2174000" />
       <workItem from="1690436263598" duration="6776000" />
       <workItem from="1690701763775" duration="3040000" />
-      <workItem from="1690784052441" duration="7762000" />
+      <workItem from="1690784052441" duration="10084000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit&#10;Configuration Project with Hibernate">
       <created>1689340153639</created>
@@ -254,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690651776130</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="First Working DB Tests">
+      <created>1690803598114</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690803598114</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +286,7 @@
     <MESSAGE value="Third Commit&#10;Class Config and Autotest Sample" />
     <MESSAGE value="Forth Commit&#10;First Autotest with 3 layers" />
     <MESSAGE value="First Working API Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Working API Tests" />
+    <MESSAGE value="First Working DB Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Working DB Tests" />
   </component>
 </project>
