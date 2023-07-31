@@ -9,4 +9,6 @@ public class GlobalVariables {
 
     public static final String SHIKI_SINGLE_MANGA = "mangas/{mangaId}";
 
+    public static final String SHIKI_SINGLE_ANIME = "animes/{animeId}";
+
 }

@@ -1,7 +1,11 @@
 package Autotest.stepDefinitions;
 
 import Autotest.API.BaseAPI;
+import Autotest.POJOclasses.AnimeIdClass;
 import Autotest.utils.GlobalVariables;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,7 +21,9 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class APISteps {
 
-    private static Response response;
+    public static Response response;
+    public static String JSON_local;
+
 
 
     @Given("Site Shiki is working")
@@ -66,4 +72,20 @@ public class APISteps {
     public void mangaShouldBeNamedMonster(String mangaName) {
         response.then().body("name", equalTo(mangaName));
     }
+
+
+
+    @When("I looking for Anime with id {int}")
+    public void iLookingForAnimeWithId(int animeId) {
+        response = given().
+                pathParam("animeId", animeId)
+                .when()
+                .get(GlobalVariables.SHIKI_SINGLE_ANIME).then().extract().response();
+
+    }
+
+
+
+
+
 }

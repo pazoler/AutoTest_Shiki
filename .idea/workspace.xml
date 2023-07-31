@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec814184-ad7a-452c-81a4-57151e135b0f" name="Changes" comment="Forth Commit&#10;First Autotest with 3 layers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/API/BaseAPI.java" afterDir="false" />
+    <list default="true" id="ec814184-ad7a-452c-81a4-57151e135b0f" name="Changes" comment="First Working API Tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/POJOclasses/AnimeIdClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/POJOclasses/AnimeImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/hibernate/entity/AnimesTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/DBsteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/DBHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DBtest.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/driver/drivers/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/APISteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/APISteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/APIHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/APIHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/GUIHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/GUIHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Autotest/utils/GlobalVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Autotest/utils/GlobalVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GetManga.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GetManga.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GetManga.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GetMangaAPI.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -44,7 +47,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/APIHooks.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Autotest/stepDefinitions/base/GUIHooks.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Autotest/utils/GlobalVariables.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/GetManga.feature" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/features/GetMangaAPI.feature" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/resources/features/ShikiLogIn.feature" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -62,17 +65,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Games/ForIdea/IdeaProjects/RestAssuredProj",
+    "last_opened_file_path": "C:/Games/ForIdea/IdeaProjects/AutoTest_Shiki/src/main/java/Autotest/POJOclasses",
     "spring.configuration.checksum": "83b5d72a2f5a01fcd8a640d11abee1de"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\main\java\Autotest\POJOclasses" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\test\resources\features" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\main\resources" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\main\java\Autotest\driver\drivers" />
       <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\main\java" />
-      <recent name="C:\Games\ForIdea\IdeaProjects\AutoTest_Shiki\src\test\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Autotest" />
@@ -86,20 +89,7 @@
       <recent name="Autotest.driver.base" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Search magna by id">
-    <configuration name="TestWithoutXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="configure.TestWithoutXML" />
-      <module name="AutoTest_Shiki" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="configure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Search for one of the highest score manga">
     <configuration name="Scenario: Checking genres" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GetManga.feature" />
@@ -109,6 +99,26 @@
       <option name="NAME_FILTER" value="^Checking genres$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking genres$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Checking genres" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Search for one of the highest score manga" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/DBtest.feature" />
+      <option name="GLUE" value="Autotest.stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AutoTest_Shiki" />
+      <option name="NAME_FILTER" value="^Search for one of the highest score manga$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search for one of the highest score manga$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search for one of the highest score manga" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -182,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Search for one of the highest score manga" />
         <item itemvalue="Cucumber Java.Scenario: Search magna by id" />
         <item itemvalue="Cucumber Java.Scenario: Checking genres" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Login (1)" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
-        <item itemvalue="Application.TestWithoutXML" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +216,8 @@
       <workItem from="1689860694899" duration="1930000" />
       <workItem from="1689874876688" duration="2174000" />
       <workItem from="1690436263598" duration="6776000" />
+      <workItem from="1690701763775" duration="3040000" />
+      <workItem from="1690784052441" duration="7762000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit&#10;Configuration Project with Hibernate">
       <created>1689340153639</created>
@@ -235,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689781157329</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First Working API Tests">
+      <created>1690651776130</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690651776130</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +265,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -257,6 +288,7 @@
     <MESSAGE value="Second Commit&#10;DI And IOC test" />
     <MESSAGE value="Third Commit&#10;Class Config and Autotest Sample" />
     <MESSAGE value="Forth Commit&#10;First Autotest with 3 layers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forth Commit&#10;First Autotest with 3 layers" />
+    <MESSAGE value="First Working API Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Working API Tests" />
   </component>
 </project>
