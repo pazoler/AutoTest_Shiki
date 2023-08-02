@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "employees")
 @Component("test")
-public class ConnectionTest {
+public class ConnectionTest implements DBInterface {
     @Column(name = "id")
     @Id
     private int id;

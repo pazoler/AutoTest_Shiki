@@ -1,9 +1,12 @@
 package configure;
 
+import Autotest.hibernate.entity.AnimesTable;
 import Autotest.hibernate.entity.ConnectionTest;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import java.util.List;
 
 public class TestDB {
     public static void main(String[] args) {
@@ -23,7 +26,11 @@ public class TestDB {
 
             //открытие транзакции отправка и закрытие сессии
             session.beginTransaction();
-            session.save(emp);
+//            session.save(emp);
+            List<ConnectionTest> tests = session.createQuery("from ConnectionTest", ConnectionTest.class).getResultList();
+            System.out.println(tests);
+            List<AnimesTable> tests1 = session.createQuery("from AnimesTable", AnimesTable.class).getResultList();
+            System.out.println(tests1);
             session.getTransaction().commit();
         }finally {
             factory.close();

@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "animes")
 @Component("anime")
-public class AnimesTable {
+public class AnimesTable implements DBInterface {
     @Column(name = "id")
     @Id
     private int id;
